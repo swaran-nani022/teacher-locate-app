@@ -1,0 +1,90 @@
+/* Global reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #444, #ddd);
+  }
+  
+  
+  .room-entry {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .room-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 200px;
+    margin-left:56px;
+  }
+  
+  .submit-room-btn {
+    padding: 8px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left:6px;
+  }
+  
+  .submit-room-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Centering the tracker content */
+  .tracker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Styling the tracker box */
+  .tracker-box {
+    /* background-color: rgba(0, 0, 0, 0.6); Semi-transparent dark background */
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    margin-left: 450PX;
+  }
+  
+  /* Logo image */
+  .tracker-box img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 0px;
+  }
+  
+  /* Text elements */
+  .tracker-box h2 {
+    margin-bottom: 0px;
+    font-size: 24px;
+    color: #ffdd57;
+  }
+  
+  .tracker-box p {
+    margin: 12px 0;
+    font-size: 16px;
+    color: black;
+  }
+  
+  /* Dropdown styling */
+  .tracker-box select {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    background-color: #fff;
+    color: #333;
+  }
+  
