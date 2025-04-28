@@ -2,8 +2,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig(({ mode }) => ({
-  plugins: [react()],
-  base: mode === 'development' ? '/' : '/teacher-locate-app/',  // Replace with your repo name
-}))
+export default defineConfig(({ mode }) => {
+  const isVercel = process.env.VERCEL === '1';  // Check if deployed on Vercel
+  return {
+    plugins: [react()],
+    base: mode === 'development' || isVercel ? '/' : '/teacher-locate-app/',  // Dynamically set base
+  };
+})
