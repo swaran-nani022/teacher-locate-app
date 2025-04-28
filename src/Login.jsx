@@ -14,7 +14,7 @@ function Login({ onLogin }) {
       const res = await signInWithEmailAndPassword(auth, email, password);
       const user = res.user;
 
-      const docRef = doc(db, "teachers", user.email);
+      const docRef = doc(db, "teachers", user.email); // Use email instead of UID
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
@@ -40,7 +40,7 @@ function Login({ onLogin }) {
         </p>
       </div>
       <div className="login-box">
-        <h2>Login</h2>
+        <h2>Login to LocateMyProf</h2>
         <input
           type="email"
           placeholder="Email"
