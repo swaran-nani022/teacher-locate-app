@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+// vite.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig({
-  base: '/teacher-page/',  // GitHub Pages subdirectory
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-});
+  base: mode === 'development' ? '/' : '/teacher-page/',  // <-- important
+}))
